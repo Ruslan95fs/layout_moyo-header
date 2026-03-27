@@ -42,11 +42,9 @@ body {
   text-transform: uppercase;
 }
 
-.nav__item:first-child {
-  margin-left: 0;
-}
-
 .nav__link.is-active {
+  margin-left: 0;
+
   --active-color: #00acdc;
 
   color: #00acdc;
