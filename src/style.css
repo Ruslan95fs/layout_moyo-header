@@ -1,26 +1,25 @@
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-transform: uppercase;
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding-inline: 50px;
   box-sizing: border-box;
   align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .logo__img {
-  display: block;
+  display: flex;
   width: 40px;
   height: 40px;
 }
@@ -40,10 +39,17 @@ body {
   text-align: center;
   position: relative;
   color: #000;
+  text-transform: uppercase;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
 }
 
 .nav__link.is-active {
-  --active-color: #00ACDC;
+  --active-color: #00acdc;
+
+  color: #00acdc;
 }
 
 .nav__link.is-active::after {
@@ -58,11 +64,9 @@ body {
 }
 
 .nav__link:hover {
-  color: var(--active-color);
+  color: #00acdc;
 }
 
 a:hover {
   color: var(--active-color);
 }
-
-
